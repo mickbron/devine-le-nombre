@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devine le Nombre</title>
+  <title>Devine le Nombre - IPC</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Devine le Nombre</h1>
-    <p class="subtitle">Trouve le nombre mystère entre 1 et 100</p>
+    <p class="subtitle">Version 2 avec IPC</p>
 
     <div class="game-box">
-      <label for="guessInput">Entre un nombre :</label>
+      <label for="playerName">Nom du joueur :</label>
+      <input type="text" id="playerName" placeholder="Votre nom">
+
+      <label for="guessInput">Entre un nombre entre 1 et 100 :</label>
       <div class="input-row">
         <input type="number" id="guessInput" min="1" max="100" placeholder="Ex: 42">
         <button id="guessBtn">Tester</button>
@@ -24,6 +27,9 @@
 
       <h2>Historique des tentatives</h2>
       <ul id="historyList"></ul>
+
+      <h2>Top 5 scores</h2>
+      <ol id="scoreList"></ol>
     </div>
   </div>
 

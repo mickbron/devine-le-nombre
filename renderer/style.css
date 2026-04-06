@@ -37,10 +37,12 @@ h1 {
 }
 
 input {
-  flex: 1;
-  min-width: 180px;
+  width: 100%;
   padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 button {
@@ -75,11 +77,7 @@ button:hover {
   color: #007bff;
 }
 
-#historyList {
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-#historyList li {
+#historyList li,
+#scoreList li {
   margin-bottom: 8px;
 }
