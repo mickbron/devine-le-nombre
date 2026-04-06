@@ -1,0 +1,14 @@
+{
+  "name": "devine-le-nombre",
+  "version": "1.0.0",
+  "description": "Projet Electron - Devine le Nombre",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}

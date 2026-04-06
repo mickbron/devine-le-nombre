@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devine le Nombre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Devine le Nombre</h1>
+    <p class="subtitle">Trouve le nombre mystère entre 1 et 100</p>
+
+    <div class="game-box">
+      <label for="guessInput">Entre un nombre :</label>
+      <div class="input-row">
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Ex: 42">
+        <button id="guessBtn">Tester</button>
+        <button id="newGameBtn">Nouvelle partie</button>
+      </div>
+
+      <p id="message" class="message">Bonne chance !</p>
+      <p id="attemptCount">Essais : 0</p>
+
+      <h2>Historique des tentatives</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
